@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LuniSolar Store</title>
+  <style>
+    html, body { height: 100%; margin: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: system-ui, Arial, sans-serif;
+      color: #ffffff;
+      padding-top: 64px; /* space for fixed nav */
+
+      /* solid gradient background */
+      background: linear-gradient(135deg, #8439c5 0%, #FFB027 100%);
+      background-attachment: fixed;
+
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    /* Top navigation */
+    header.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px 20px;
+      z-index: 1000;
+      background: linear-gradient(to right, rgba(0,0,0,0.12), rgba(0,0,0,0.04));
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    nav.main-nav { display: flex; gap: 8px; align-items: center; }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 120ms ease, transform 80ms ease;
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    /* simple content (no boxed card) */
+    .card {
+      max-width: 880px;
+      background: transparent;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    /* remove text glow (no text-shadow) */
+    h1 { font-size: 2rem; margin: 0 0 12px 0; }
+
+    /* larger description, no glow */
+    p.lead {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.95);
+      padding: 0 12px;
+    }
+
+    .store-link {
+      display: inline-block;
+      margin-top: 14px;
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    @media (max-width: 520px) {
+      .card { margin: 12px; }
+      h1 { font-size: 1.6rem; }
+      .nav-link { padding: 6px 8px; font-size: 0.88rem; }
+      p.lead { font-size: 1rem; padding: 0 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a class="nav-link" href="cool3.html" target="_self" rel="noopener">Discord</a>
+      <a class="nav-link" href="cool4.html" target="_self" rel="noopener">Vote</a>
+      <a class="nav-link" href="cool5.html" target="_self" rel="noopener">Wiki</a>
+      <a class="nav-link" href="cool.html" target="_self" rel="noopener">Home</a>
+    </nav>
+  </header>
+
+  <main class="card" role="main">
+    <h1>LuniSolar Store</h1>
+    <p class="lead">
+      LuniSolar Store is your one-stop destination for exclusive ranks and monthly lootboxes that enhance your gameplay experience. Explore limited-time offers, premium rewards, and unique collectibles designed to make your journey truly stellar.
+    </p>
+    <div>
+      <a class="store-link" href="https://store.lunisolar.net" target="_blank" rel="noopener">https://store.lunisolar.net</a>
+    </div>
+  </main>
+</body>
+</html>
